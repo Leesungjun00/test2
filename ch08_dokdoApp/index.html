@@ -1,0 +1,164 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>회사소개_Page</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">회사소개</a></li>
+				<li><a href="#movie" data-rel="dialog">회사영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">개발할때 듣는노래</a></li>
+				<li><a href="#gallery">회사사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>회사소개_LeeSungJun</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="main1.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>이음디자인사무소</h3>
+					<p>이음디자인사무소는
+
+						건축, 인테리어, 브랜딩을 하는 종합 디자인 그룹입니다.
+						또한, 고객의 필요와 사고를 디자인에 반영하고
+						공간과 물성을 통하여 시공하는 실물구현사무소입니다.
+						 
+						
+						이음디자인사무소는 인간의 삶을 한 층 더
+						
+						영위하는 일련의 모든 행위를
+						
+						건축, 인테리어, 브랜딩으로 구현합니다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Information</h3>
+					<p>Phone : 02.501.9426</p>
+					<p>Fax : 02.518.9426</p>
+					<p>Email : info@eumcnd.com</p>
+					<p>Address : 12, Apgujeongro 18gil, Gangnamgu, Seoul</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>Link</h3>
+					<li class="social-item"><a class="social-link text-light" href="https://www.eumcnd.com/">HomePage</a></li>
+					<li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/official_e.um/">Instagram1</a></li>
+					<li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/place_zine/">Instagram2</a></li>
+					<li class="social-item"><a class="social-link text-light" href="https://blog.naver.com/eumdesignoffice">Blog</a></li>
+					<li class="social-item"><a class="social-link text-light" href="https://www.youtube.com/placezine">Youtube</a></li>
+					
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>회사소개_LeeSungJun</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>회사영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">아산을 명소로 만든 카페가 있다? 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/VdzkuCErdIQ"></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">강남에서 가장 독특한 단독주택 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/jnyHAAbe3dE"></iframe></li><br/>
+				<!-- <source src="mop.mp4" type="video/mp4"> -->
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>개발할때 듣는노래</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">lovely</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="lovely.mp4" type="audio/mp3">
+			</audio>	
+			<img src="mu1.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>개발할때 듣는노래</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">Lemaitre - Higher ft. Maty Noyes</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="Lemaitre - Higher ft. Maty Noyes.mp4" type="audio/mp3">
+			</audio>			
+			<img src="mu2.jpeg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>회사사진</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="pf1.webp" rel="external"><img src="pf1.webp" /></a></li>	
+				<li><a href="pf2.webp" rel="external"><img src="pf2.webp" /></a></li>	
+				<li><a href="pf3.webp" rel="external"><img src="pf3.webp" /></a></li>	
+				<li><a href="pf4.webp" rel="external"><img src="pf4.webp" /></a></li>	
+				<li><a href="pf5.webp" rel="external"><img src="pf5.webp" /></a></li>
+				<li><a href="pf6.webp" rel="external"><img src="pf6.webp" /></a></li>
+				<li><a href="pf7.webp" rel="external"><img src="pf7.webp" /></a></li>
+				<li><a href="pf8.webp" rel="external"><img src="pf8.webp" /></a></li>
+				<li><a href="pf9.webp" rel="external"><img src="pf9.webp" /></a></li>
+				<li><a href="pf10.webp" rel="external"><img src="pf10.webp" /></a></li>
+				
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>회사소개_LeeSungJun</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
